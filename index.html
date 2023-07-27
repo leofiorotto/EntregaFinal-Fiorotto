@@ -13,12 +13,15 @@
 <body>
     <div class="wrapper">
         <header class="hero-index">
-            <nav class="navbar navbar-expand-lg bg-body-tertiary menuz">
-                <div class="container-fluid">
-                <a class="navbar-brand" href="#"><h3>DIGITAL-CODER</h3></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary menuz  hero-nav">
+                <div class="container-fluid ">
+                 
+
+                        <a class="navbar-brand" href="#"><h3>DIGITAL-CODER</h3></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                </div>
                 <div class="collapse navbar-collapse" id="navbarScroll">
                     <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
                         <li class="nav-item">
@@ -36,7 +39,7 @@
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">QUIENES SOMOS</a>
+                            <a class="nav-link" href="#">NOSOTROS</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="./pages/faq.html">PREGUNTAS</a>
@@ -44,31 +47,48 @@
                         <li class="nav-item">
                             <a class="nav-link" href="./pages/contact.html">CONTACTO</a>
                         </li>
-                       
+                    
                 
                     </ul>
-                    <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
-                </div>
+                
                 </div>
             </nav>
         </header>
 
-        <section class="hero_main container">
-            <div class="hero_media">
-                <div class="hero_text">
-                    <h5>LO MEJOR LO ENCONTRAS EN</h5>
-                    <div class="hero_tittle">
-                        <h2>DIGITAL-CODER</h2>
-                    </div>
-                </div>
-        
-                <img class="image" src="./images/2.png" alt="Image wrap">
-        
+        <div id="carouselExampleDark" class="carousel carousel-dark slide">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-        </section> 
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-bs-interval="10000">
+                <img src="./images/carousel1.png" class="d-block w-100 img-carousel" alt="...">
+                <div class="carousel-caption d-none d-md-block text_carousel">
+                  <h1>DIGITAL-CODER</h1>
+                  <h4>¿Algo te interesa? CONTACTANOS</h4>
+                </div>
+              </div>
+              <div class="carousel-item" data-bs-interval="2000">
+                <img src="./images/carousel2.png" class="d-block w-100 img-carousel" alt="...">
+                <div class="carousel-caption d-none d-md-block text_carousel">
+                  <h1>Los mejores productos</h1>
+                  <h4>Revisa nuestras ofertas. ¡Te gustaran!</h4>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="./images/carousel3.png" class="d-block w-100 img-carousel" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     
         <section class="grid container">
             <div class="grid_item grid_item1">

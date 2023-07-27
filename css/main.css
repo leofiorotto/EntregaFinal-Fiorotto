@@ -21,7 +21,6 @@ h1, h2, h3, h4, h5, p, a {
 
 
 .wrapper {
-    padding: 2rem 2rem;
     margin: 0 auto;
 }
 
@@ -35,19 +34,36 @@ h1, h2, h3, h4, h5, p, a {
 
 .hero-index {
     height: 50vh;
-    background-image: url(../images/banner-prueba1.png);
-    background-repeat: no-repeat;
+    background-image: url(../images/banner-1.png);
     background-size: cover;
 }
+
+.hero-nav {
+    padding: 3rem!important;
+    background-image: linear-gradient(#74f1df, white);
+    border-radius: 2rem;   
+}
+
+.hero-nav a {
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #4805c4;
+
+}
+.container-fluid {
+    width: 50%!important;
+}
+
+
 
 /*----------------------------------------------------------------------*/
 
 /*--------------------------FOOTER--------------------------------------------*/
 
 footer {
-    border: 2px solid #9fd1ca ; 
-    background-color: #9fd1ca;
-  }
+    background-image: linear-gradient( white, #74f1df);
+    padding-top: 5rem;
+}
   
   .container-footer {
     margin: 0 auto;
@@ -82,40 +98,26 @@ footer {
 
 /*---------------------------INDEX-------------------------------------------*/
 
-/*--------------------------SECCION1-INDEX--------------------------------------------*/
+/*--------------------------CARRUSEL-INDEX--------------------------------------------*/
 
-.hero_main {
-    display: flex;
-    flex-direction: column;
-    gap: 10%;
-    margin-top: 1rem;
-    background-color: #ecf5f4;
-    border: 2px solid #c2c7c6;
-    padding: 2rem 0;
-}
+ .img-carousel {
+  
+    border-radius: 1rem;
+    max-width: 60%;
+    margin: 1rem auto;
+ 
+} 
 
-.hero_text {
-    font-size: 2.8rem;
+.text_carousel {
+    color: white!important;
     font-family: 'Bebas Neue', sans-serif;
-    font-weight: bold;
-    text-align: center;
-    color: #4805c4
+    letter-spacing: 0.2rem;
+   
 }
 
-.hero_tittle {
-    font-size: 4rem;
-    text-align: center;
-    border: 2px dotted black;
-    color: black;
-    border-radius: 1.5rem;
-}
 
-.image {
-    background-size: cover;
-    overflow: hidden;
-}
 
-/*--------------------------SECCION2-INDEX--------------------------------------------*/
+/*--------------------------GRILLA-INDEX--------------------------------------------*/
 
 
 .grid {
@@ -126,8 +128,10 @@ footer {
         "item1 item2"
         "item4 item3"
         "item5 item5";
-    gap: 2rem;
     text-shadow: 1px 1px 0 grey;
+    margin-top: 2rem;
+    gap: 4rem;
+    aspect-ratio: 1;
 }
 
 .grid_item {
@@ -217,44 +221,17 @@ footer {
     margin-top: 0;
 }
 
-  /*------------------------------------------------------------------------------
-    ------------------------------------------------------------------------------
-    ------------------------------PRODUCTOS------------------------------------------------*/
-
-    .hero_products {
-        padding: 0;
-        display: flex;
-        gap: 2rem;
-    }
+  /*------------------------------PRODUCTOS------------------------------------------------
     
-    .search_products {
+    ---------------------------CHECKBOX-PRODUCTOS------------------------------------------------*/
       
-        height: auto;
-        padding: 3rem;
-        font-family: 'Bebas Neue', sans-serif;
-        font-weight: bold;
-        font-size: 1.5rem;
-        justify-content: center;
-    
-    }
-    
-    .search_products h1 {
-        padding-bottom: 10rem;
-    }
-    
-    .select_input {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .item_select_search {
-        display: flex;
+    .item_select {
+        border-radius: 1rem;
+        padding: .5rem;
         margin-bottom: 1rem;
-        gap: 1rem;
-       
+        font-size: 1.2rem;
     }
-    
+
     .item_select:hover {
         background-color: black;
         color: #74f1df;
@@ -264,25 +241,11 @@ footer {
         border-radius: 1rem;
         padding: 0.2em;
         cursor: pointer;
+        padding: 1rem;
     
     }
     
-    .item_select {
-        border-radius: 1rem;
-        padding: .5rem;
-        margin-bottom: 1rem;
-    }
-    
-    .button_search {
-        padding: 0.5rem;
-        border-radius: 1rem;
-    }
-    
-    .search {
-        height: 2rem;
-        border-radius: 0.5rem;
-        margin-bottom: 0.3rem;
-    }
+  
 
 /*---------------------ITEM PRODUCTO - PRODUCTOS-----------------------------*/
 
@@ -291,8 +254,15 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
-    margin: 2rem;
-    
+    width: 70%;
+    margin: 2rem auto;
+}
+
+.item_checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-column: 1/3;
 }
 
 
@@ -307,7 +277,7 @@ footer {
     letter-spacing: 0.18rem;
     margin-top: 2rem;
     margin-bottom: 2rem;
-    grid-column: 1/4;
+    grid-column: 3/4;
 }
 
 .product_search_bar {
@@ -517,115 +487,128 @@ line-height: 1;
     left: 80%;
   } 
 
-/*------------QUERYS PREGUNTAS--------------*/
-/* 
-@media screen and (max-width:1200) {
-    
-.item1 {
-    
-}
-} */
+
+/*-----------------------------------------------QUERYS-----------------------------------------------------------------------*/
 
 
-
-/*--------------------------*/
-
-
-
-@media screen and (max-width:1000px) {
-
-    .item_product {
-        grid-template-columns: 1fr 1fr;
+@media  screen and (max-width:1900px) {
+    .hero-index {
+        height: 50vh;
+        background-image: url(../images/banner-2.png);
+       
     }
-        .product_search {
-            grid-column: 1/3;
-        }
-        .search_products {
-            padding: 0;
-        }
     
 }
 
-@media screen and (max-width:900px) {
-
-    .item_product {
-        grid-template-columns: 1fr;
-    }
-        .product_search {
-            grid-column: 1/2;
-        }
-    
-}
-
-@media screen and (max-width:700px) {
+@media screen and (max-width:1300px) {
     .hero-index {
         background-image: none;
         height: auto;
     }
-    .search_products {
-        display: none;
+
+    .item_product {
+        grid-template-columns: 1fr 1fr;
     }
+
+    .product_search {
+        grid-column: 1/3;
+    }
+
+    .search_products {
+        padding: 0;
+    }
+
+    .hero-index {
+        max-height: 20vh;
+      
+    }
+    
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:1000px) {
+        .hero_media {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .hero_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2rem;
+    }
+
+    .hero_tittle {
+        font-size: 4rem;
+    }
+
+    .hero_media {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero_faq {
+        min-width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .item_faq{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+
+    }
+
+    .item_faq2 {
+        border-radius:  50% 50% 0 0;
+    }
+    .item_faq3 {
+        border-radius:  0 0 0 0;
+    }
+    .item_faq10 {
+        border-radius:  0 0 0 0;
+    }
+    .item_faq11 {
+        border-radius:  0 0 50% 50%;
+    }
+
+
+
+
+}
+
+
+
+@media screen and (max-width:900px) {
     .item_product {
        display: flex;
        flex-direction: column;
     
     }
-        .product_search {
-            grid-column: 1/2;
-        }
 
+}
 
-
-
+@media screen and (max-width:700px) {
+    
+    .search_products {
+        display: none;
     }
-      /*------------------------------------------------------------------------------
-    ------------------------------------------------------------------------------
-    ------------------------------------------------------------------------------*/
 
-
-    @media screen and (min-width:1000px) {
-           .hero_media {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            
-        }
-
-         .hero_text {
+    .grid {
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        margin-left: 2rem;
-        }
-
-        .hero_tittle {
-            font-size: 4rem;
-        }
-
-        .grid {
-            margin-top: 2rem;
-            gap: 4rem;
-            aspect-ratio: 1;
-        }
+        margin-top: 2rem;
     }
+}
 
-    @media screen and (max-width:1000px) {
-      
-        .hero_media {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
 
-        .image {
-            width: 100%;
-        }
-        
-    }
+
+
 
 
     @media screen and (max-width:500px) {
@@ -649,13 +632,5 @@ line-height: 1;
         }
     }
 
-    @media screen and (max-width:700px) {
-
-        .grid {
-            display: flex;
-            flex-direction: column;
-            margin-top: 2rem;
-        }
-
-    }
+ 
 
