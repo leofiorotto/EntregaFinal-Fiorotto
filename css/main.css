@@ -22,38 +22,44 @@ h1, h2, h3, h4, h5, p, a {
 
 .wrapper {
     margin: 0 auto;
+    min-width: 100%;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding-inline: 3rem;
+   
 }
 
 /*--------------------------HEADER--------------------------------------------*/
 
-.hero-index {
+
+.header-img {
     height: 50vh;
     background-image: url(../images/banner-1.png);
     background-size: cover;
-}
-
-.hero-nav {
-    padding: 3rem!important;
-    background-image: linear-gradient(#8a8a8a, white);
-    border-radius: 2rem;   
-}
-
-.hero-nav a {
     font-size: 1.5rem;
     font-weight: 500;
     color: #4805c4;
+    font-family: 'Bebas Neue', sans-serif;
 
 }
-.container-fluid {
-    width: 50%!important;
+
+.header-navbar a {
+    color: #4805c4;
+    padding: 0!important;
+    font-size:2rem!important;
+
+
+
 }
 
+.header-navbar h2 {
+    color: #4805c4;
+    font-size: 4rem!important;
+
+}
 
 
 /*----------------------------------------------------------------------*/
@@ -649,12 +655,22 @@ line-height: 1;
 }
 
 @media screen and (max-width:1000px) {
-        .hero_media {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
+
+    .header-img {
+        background-image: none;
+        height: auto;
     }
+   
+
+  
+
+    .navbar-toggler {
+        display: block;
+    }
+
+    .navbar-brand h2 {
+        display: none;
+    } 
 
     .hero_text {
     display: flex;
