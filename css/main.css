@@ -263,7 +263,7 @@ footer {
       /*------------------------------CIRCLE SECCION------------------------------------------------*/
 
         .circle-section {
-            max-width: 90%;
+            max-width: 75%;
             position: relative;
             left: 50%;
             transform: translate(-50%);
