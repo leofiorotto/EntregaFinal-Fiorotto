@@ -261,6 +261,25 @@ footer {
 
 
 
+      /*------------------------------CIRCLE SECCION------------------------------------------------*/
+
+        .circle-section {
+            max-width: 90%;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);
+            padding-bottom: 10vh;
+            cursor: pointer;
+
+           
+        }
+
+        .circle-section img {
+            border-radius: 50%;
+            padding: 1rem;
+
+        }
+
 
   /*------------------------------PRODUCTOS------------------------------------------------
     
@@ -697,11 +716,13 @@ line-height: 1;
       
     }
 
-   
-
     .banner-img {
         width: 90%;
         height: 40vh;
+    }
+
+    .circle-section img{
+       display: none;
     }
     
 }
