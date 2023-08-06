@@ -1,0 +1,132 @@
+
+.hero_faq {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: 
+    "item_faq1 item_faq1"
+    "item_faq2 item_faq3"
+    "item_faq4 item_faq5"
+    "item_faq6 item_faq7"
+    "item_faq8 item_faq9"
+    "item_faq10 item_faq11";
+    margin-left: 10rem;
+    margin-right: 10rem;
+    margin-bottom: 1rem;
+    padding-bottom: 10vh;
+    
+    .item_faq {
+        font-family: $fontBebasNeue;
+        font-weight: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin: 0.5rem;
+        padding: 1rem;
+
+        p {
+            font-size: 20px;
+            color: white;
+        }
+    }
+
+    
+    .item_faq1 {
+        grid-area: item_faq1;
+        margin-bottom: 3rem;
+        
+        h2 {
+            color: white;
+        }
+    }
+    .item_faq2 {
+        grid-area: item_faq2;
+        background-color: #73C3DC;
+        border-radius:  3rem 0 0 0;
+    }
+    .item_faq3 {
+        grid-area: item_faq3;
+        background-color: #7167D6;
+        border-radius:  0 3rem 0 0;
+    }
+    .item_faq4 {
+        grid-area: item_faq4;
+        background-color: #727ED8;
+
+    }
+    .item_faq5 {
+        grid-area: item_faq5;
+        background-color: #73B8DC;
+
+    }
+    .item_faq6 {
+        grid-area: item_faq6;
+        background-color: #73C3DC;
+
+    }
+    .item_faq7 {
+        grid-area: item_faq7;
+        background-color: #7167D6;
+
+    }
+    .item_faq8 {
+        grid-area: item_faq8;
+        background-color: #727ED8;
+
+    }
+    .item_faq9 {
+        grid-area: item_faq9;
+        background-color: #73B8DC;
+
+    }
+    .item_faq10 {
+        grid-area: item_faq10;
+        background-color: #73ACDB;
+        border-radius: 0 0 0 3rem;
+    }
+    .item_faq11 {
+        grid-area: item_faq11;
+        background-color: #7295D9;   
+        border-radius:  0 0 3rem 0;
+    }
+    .search {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        font-family: $fontBebasNeue;
+        font-weight: bold;
+        letter-spacing: 0.18rem;
+     
+        .search_bar {
+            position: relative;
+
+            .search_input {
+                padding: 0.5rem;
+                border: 3px solid #f3a109;
+                border-radius: 3rem;
+              } 
+
+            &_img {
+                position: absolute;
+                height: 3rem;
+                width: 3rem;
+                top:-0.3rem;
+                left: 80%;
+            } 
+        }
+
+    }
+
+}
+
+
+
+ 
+
+
+
+
+

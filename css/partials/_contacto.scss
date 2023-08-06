@@ -1,0 +1,60 @@
+.contact {
+    background-image: url(../images/bg-contact.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    height: 100vh;
+    align-items: center;
+   
+    .form_contact {
+      margin-left: 10%;
+      background-image: url(../images/bg-about.png);
+      height: fit-content;
+      border-radius: 1rem;
+      padding: 5%;
+      color: #fcfcfc;
+
+      .item-form {
+          padding: 1rem;
+      }
+      
+      .item-type-form {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+      }
+      
+      .button_form {
+          margin-top: 2rem;
+          border: 1px solid $primaryColor;
+          padding: 1rem;
+          background-color: $secondaryColor;
+          color: $ternaryColor;
+          text-decoration: none;
+          font-family: $fontBebasNeue; 
+          border-radius: 50px;
+          color:  black
+      }
+
+    }
+
+    .map_contact {
+        margin-right: 20%;
+        background-image: url(../images/bg-about.png);
+        height: fit-content;
+        padding: 5%;
+        color: $ternaryColor;
+        border-radius: 1rem;
+
+        .map {
+            margin: 1rem;
+            height: 40vh;
+            width: 100%;
+            border-radius: 1rem;
+        }
+    }
+}
+
+
+

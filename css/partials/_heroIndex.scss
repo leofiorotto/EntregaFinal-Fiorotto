@@ -1,0 +1,158 @@
+
+.img-carousel {
+  
+    border-radius: 1rem;
+    max-width: 100%;
+    margin: 1rem auto;
+ 
+} 
+
+.text_carousel {
+    color: white!important;
+    font-family: $fontBebasNeue;
+    letter-spacing: 0.2rem;
+   
+}
+
+
+
+/*----------------------------------------------*/
+
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr .7fr;
+    grid-template-areas: 
+        "item1 item2"
+        "item4 item3"
+        "item5 item5";
+    text-shadow: 1px 1px 0 $ternaryColor;
+    margin-top: 2rem;
+    gap: 4rem;
+    aspect-ratio: 1;
+
+    .grid_item {
+        position: relative;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 1rem;
+        padding-top: 2rem;
+        border: 3px solid #000000;
+
+            h4 {
+                
+                    padding: 0.5rem 1rem;
+                    margin-left: 2rem;
+                    margin-top:11rem;
+                    font-family: 'Bebas Neue', sans-serif;
+                    font-weight: bold;
+                    font-size: 1.5rem;
+                    background-color: $primaryColor;
+                    color: white;
+                    width: max-content;
+                    border-radius: 10px;
+                
+            }
+
+            .offer {
+                position: absolute;
+                top: -1rem;
+                left: -2.5rem;
+                background-color: $secondaryColor;
+                padding: 1rem;
+                aspect-ratio: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                font-weight: bold;
+                font-size: 1.8rem;
+                font-family: $fontBebasNeue;
+            }
+    }
+
+    .grid_item1 {
+        grid-area: item1;
+        background-image: url(../images/grid1.png);
+        background-color: $ternaryColor;
+    }
+
+
+    .grid_item2 {
+        grid-area: item2;
+        background-image: url(../images/grid3.png);
+        background-color: $ternaryColor;
+    }
+
+    .grid_item3 {
+        grid-area: item3;
+        background-image: url(../images/accesorios.png);
+        background-color: $ternaryColor;
+    }
+
+    .grid_item4 {
+    
+        grid-area: item4;
+        background-image: url(../images/grid2.png);
+        background-color: $ternaryColor;
+    }
+    .grid_item5 {
+        grid-area: item5;
+        background-image: url(../images/grid4.png);
+    }
+
+    &:hover {
+        color: $secondaryColor;
+        transform: scale(1.1);
+        transition: transform 0.3s ease;
+        cursor: pointer;
+    }
+}
+
+/*-------------------------------------------------*/
+
+    .banner-img {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+         display: flex;
+         height: 90vh;
+         width: 60%;
+         margin-top: 4rem;
+         padding-bottom: 10%;
+
+         img {
+            width: 0px;
+            flex-grow: 1;
+            object-fit: cover;
+            opacity: .8;
+            transition: .5s ease;
+            border: 5px solid white;
+
+                &:hover {
+                    cursor: crosshair;
+                    width: 70%;
+                    opacity: 1;
+                    filter: contrast(120%);
+                    border: 2px groove $ternaryColor;
+                }
+         }
+        
+    }
+
+
+      /*-------------------------------------*/
+
+        .circle-section {
+            max-width: 90%;
+            margin: 0 auto;
+            padding-bottom: 10vh;
+            cursor: pointer;
+
+                img {
+                    border-radius: 50%;
+                    padding: 1rem;
+                }
+        }
