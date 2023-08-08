@@ -1,19 +1,20 @@
 .contact {
-    background-image: url(../images/bg-contact.png);
-    background-size: contain;
-    background-repeat: no-repeat;
     display: flex;
     justify-content: space-between;
     height: 100vh;
     align-items: center;
+    color: $ternaryColor;
    
     .form_contact {
-      margin-left: 10%;
-      background-image: url(../images/bg-about.png);
-      height: fit-content;
-      border-radius: 1rem;
-      padding: 5%;
-      color: #fcfcfc;
+        position: absolute;
+        top: 30%;
+        left: 10%;
+        background-color: #ffffff41;
+        padding: 20px;
+        border-radius: 10px;
+        height: 50%;
+        width: 30%;
+       
 
       .item-form {
           padding: 1rem;
@@ -39,22 +40,44 @@
 
     }
 
+    .fondo-contact {
+        min-width: 100%;
+    }
+
+    .bg-contact {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 10px;
+    }
+
     .map_contact {
-        margin-right: 20%;
-        background-image: url(../images/bg-about.png);
-        height: fit-content;
-        padding: 5%;
-        color: $ternaryColor;
-        border-radius: 1rem;
+        position: absolute;
+        top: 30%;
+        left: 30%;
+        margin: auto;
+        padding: 3rem;
+        background-color: #ffffff73;
+        height: 50%;
+        width: 30%;
+
 
         .map {
             margin: 1rem;
             height: 40vh;
-            width: 100%;
+            width: 80%;
             border-radius: 1rem;
         }
     }
+
+    .info-contact {
+        background-color: #ffffff73;
+        height: 50%;
+        width: 30%;
+        color: $ternaryColor;
+        position: absolute;
+        top: 30%;
+        left: 70%;
+    }
 }
-
-
 

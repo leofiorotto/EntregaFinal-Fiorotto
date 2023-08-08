@@ -424,22 +424,21 @@ body, html {
 }
 
 .contact {
-  background-image: url(../images/bg-contact.png);
-  background-size: contain;
-  background-repeat: no-repeat;
   display: flex;
   justify-content: space-between;
   height: 100vh;
   align-items: center;
+  color: #f3f0f0;
 }
 .contact .form_contact {
-  margin-left: 10%;
-  background-image: url(../images/bg-about.png);
-  height: -moz-fit-content;
-  height: fit-content;
-  border-radius: 1rem;
-  padding: 5%;
-  color: #fcfcfc;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  background-color: rgba(255, 255, 255, 0.2549019608);
+  padding: 20px;
+  border-radius: 10px;
+  height: 50%;
+  width: 30%;
 }
 .contact .form_contact .item-form {
   padding: 1rem;
@@ -460,20 +459,39 @@ body, html {
   border-radius: 50px;
   color: black;
 }
+.contact .fondo-contact {
+  min-width: 100%;
+}
+.contact .bg-contact {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
 .contact .map_contact {
-  margin-right: 20%;
-  background-image: url(../images/bg-about.png);
-  height: -moz-fit-content;
-  height: fit-content;
-  padding: 5%;
-  color: #f3f0f0;
-  border-radius: 1rem;
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  margin: auto;
+  padding: 3rem;
+  background-color: rgba(255, 255, 255, 0.4509803922);
+  height: 50%;
+  width: 30%;
 }
 .contact .map_contact .map {
   margin: 1rem;
   height: 40vh;
-  width: 100%;
+  width: 80%;
   border-radius: 1rem;
+}
+.contact .info-contact {
+  background-color: rgba(255, 255, 255, 0.4509803922);
+  height: 50%;
+  width: 30%;
+  color: #f3f0f0;
+  position: absolute;
+  top: 30%;
+  left: 70%;
 }
 
 footer {
@@ -521,8 +539,8 @@ footer .container-footer p {
     display: flex;
     flex-direction: column;
   }
-  .product_search {
-    grid-column: 1/3;
+  .item_checkbox {
+    display: none !important;
   }
   .search_products {
     padding: 0;
@@ -591,9 +609,6 @@ footer .container-footer p {
   .item_product {
     display: flex;
     flex-direction: column;
-  }
-  .item_checkbox {
-    display: none;
   }
 }
 @media screen and (max-width: 700px) {
