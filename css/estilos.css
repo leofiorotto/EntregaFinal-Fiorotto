@@ -592,6 +592,8 @@ body, html {
   margin: auto;
   padding: 3rem;
   background-image: url(https://images.pexels.com/photos/1470405/pexels-photo-1470405.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .contact .map_contact h1 {
   color: #f3f0f0;
@@ -647,6 +649,7 @@ footer .container-footer p {
   .hero-index {
     background-image: none;
     height: auto;
+    max-height: 20vh;
   }
   .item_product {
     display: flex;
@@ -658,15 +661,28 @@ footer .container-footer p {
   .search_products {
     padding: 0;
   }
-  .hero-index {
-    max-height: 20vh;
-  }
   .banner-img {
     width: 90%;
     height: 40vh;
   }
   .circle-section img {
     display: none;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .contact .form_contact {
+    width: 100%;
+    height: auto;
+    padding-top: 1rem;
+    padding-bottom: 10%;
+    padding-top: 5%;
+  }
+  .contact .map_contact {
+    height: 100vh;
+    background-size: cover;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -717,19 +733,6 @@ footer .container-footer p {
   .hero_faq .item_faq11 {
     border-radius: 0 0 50% 50%;
   }
-  .contact {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-  }
-  .contact .form_contact {
-    width: 100%;
-    height: auto;
-    padding-top: 1rem;
-  }
-  .contact .map_contact {
-    height: 100vh;
-  }
 }
 @media screen and (max-width: 900px) {
   .item_product {
@@ -765,5 +768,11 @@ footer .container-footer p {
   .grid_item {
     height: 100%;
     width: 100%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .navbar-brand img {
+    display: block;
+    height: 5rem;
   }
 }/*# sourceMappingURL=estilos.css.map */
