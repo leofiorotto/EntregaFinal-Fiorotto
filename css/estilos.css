@@ -435,7 +435,7 @@ body, html {
   grid-area: form;
   height: 100%;
   padding: 20px;
-  background-color: #f3f0f0;
+  background-image: linear-gradient(#f3f0f0, white);
   padding: 3rem;
   padding-top: 20%;
 }
@@ -464,7 +464,6 @@ body, html {
   width: 100%;
   height: 100%;
   grid-area: map;
-  border-radius: 10px;
   margin: auto;
   padding: 3rem;
   background-image: url(../../images/bg-contact.png);
@@ -484,33 +483,58 @@ body, html {
 }
 
 footer {
-  background-image: linear-gradient(white, #8a8a8a);
-  padding-top: 5rem;
+  background-color: white;
 }
 footer .container-footer {
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
   padding: 1.5rem;
 }
-footer .container-footer .social-icons {
+footer .container-footer .first-container-footer {
+  border-right: 1px solid black;
+}
+footer .container-footer .first-container-footer .social-icons {
   list-style: none;
   padding: 0;
   margin-bottom: 0px;
+  text-align: center;
 }
-footer .container-footer .social-icons li {
+footer .container-footer .first-container-footer .social-icons li {
   display: inline-block;
   margin-right: 30px;
 }
-footer .container-footer .social-icons li a {
+footer .container-footer .first-container-footer .social-icons li a {
   font-size: 30px;
   text-decoration: none;
   color: black;
-  margin-left: 100%;
+}
+footer .container-footer .first-container-footer .p-footer {
+  text-align: center;
+}
+footer .container-footer .list-container {
+  display: flex;
+  width: 50%;
+  margin: auto;
+  justify-content: space-between;
+  font-family: "Agdasima", sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 2.5px;
+}
+footer .container-footer .list-container a {
+  font-size: 2rem;
+  color: #4805c4;
+}
+footer .container-footer .list-container li {
+  list-style: none;
 }
 footer .container-footer p {
   font-family: "Bebas Neue", sans-serif;
   font-size: 1.5rem;
+}
+footer .copyright {
+  border-top: 1px solid grey;
+  padding: 2rem;
+  text-align: center;
 }
 
 @media screen and (max-width: 1900px) {
@@ -555,6 +579,13 @@ footer .container-footer p {
   }
   .navbar-brand img {
     display: none;
+  }
+  .first-container-footer {
+    display: none;
+  }
+  .list-container {
+    width: 100% !important;
+    font-size: 1rem !important;
   }
   .hero_text {
     display: flex;
@@ -641,5 +672,11 @@ footer .container-footer p {
   .grid_item {
     height: 100%;
     width: 100%;
+  }
+  .list-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    line-height: 1.2rem;
   }
 }/*# sourceMappingURL=estilos.css.map */
