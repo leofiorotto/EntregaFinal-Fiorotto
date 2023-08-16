@@ -11,6 +11,7 @@
     .hero-index {
         background-image: none;
         height: auto;
+        max-height: 20vh;
     }
 
     .item_product {
@@ -25,11 +26,6 @@
         padding: 0;
     }
 
-    .hero-index {
-        max-height: 20vh;
-      
-    }
-
     .banner-img {
         width: 90%;
         height: 40vh;
@@ -39,6 +35,25 @@
         display: none;
     }
 
+    
+    .contact {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+
+        .form_contact {
+            width: 100%;
+            height: auto;
+            padding-top: 1rem;
+            padding-bottom: 10%;
+            padding-top: 5%;
+        }
+
+        .map_contact {
+            height: 100vh;
+            background-size: cover;
+        }
+    }
 
     
 }
@@ -110,26 +125,6 @@
 
     }
 
-
-
-    .contact {
-        display: flex;
-        flex-direction: column;
-        height: auto;
-
-        .form_contact {
-            width: 100%;
-            height: auto;
-            padding-top: 1rem;
-        }
-
-        .map_contact {
-            height: 100vh;
-        }
-    }
-
-
-
 }
 
 @media screen and (max-width:900px) {
@@ -157,19 +152,18 @@
     }
 }
 
-    @media screen and (max-width:500px) {
-      
-        .grid{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            gap: 1rem;
-        }
+@media screen and (max-width:500px) {
+    .grid{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
 
-        .hero_tittle h2 {
-            max-width: 100%;
-        } 
+    .hero_tittle h2 {
+        max-width: 100%;
+    } 
 
         .grid_item {
             height: 100%;

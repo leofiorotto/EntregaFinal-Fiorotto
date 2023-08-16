@@ -672,6 +672,7 @@ footer .copyright {
   .hero-index {
     background-image: none;
     height: auto;
+    max-height: 20vh;
   }
   .item_product {
     display: flex;
@@ -683,15 +684,28 @@ footer .copyright {
   .search_products {
     padding: 0;
   }
-  .hero-index {
-    max-height: 20vh;
-  }
   .banner-img {
     width: 90%;
     height: 40vh;
   }
   .circle-section img {
     display: none;
+  }
+  .contact {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .contact .form_contact {
+    width: 100%;
+    height: auto;
+    padding-top: 1rem;
+    padding-bottom: 10%;
+    padding-top: 5%;
+  }
+  .contact .map_contact {
+    height: 100vh;
+    background-size: cover;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -748,19 +762,6 @@ footer .copyright {
   }
   .hero_faq .item_faq11 {
     border-radius: 0 0 50% 50%;
-  }
-  .contact {
-    display: flex;
-    flex-direction: column;
-    height: auto;
-  }
-  .contact .form_contact {
-    width: 100%;
-    height: auto;
-    padding-top: 1rem;
-  }
-  .contact .map_contact {
-    height: 100vh;
   }
 }
 @media screen and (max-width: 900px) {
