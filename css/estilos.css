@@ -514,18 +514,28 @@ body, html {
   grid-template-areas: "about1 about1 about2 about2" "about3 about4 about4 about5" "about6 about6 about7 about7";
 }
 .grid-about .grid-about1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #73B8DC;
-  background-image: url(../../images/sobre-nosotros.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
   grid-area: about1;
 }
 .grid-about .grid-about2 {
-  background-image: url(../../images/sobre.nosotros2.png);
+  width: auto;
+  height: auto;
   background-position: center;
   background-color: #909ae2;
   grid-area: about2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.grid-about .grid-about2 img {
+  max-width: 100%;
+  height: 100%;
 }
 .grid-about .grid-about3 {
   background-image: linear-gradient(to bottom left, #73ACDB, #818ac5);
@@ -710,13 +720,19 @@ footer .copyright {
     background-image: url(../images/banner-2.png);
   }
 }
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1500px) {
   .grid-about {
     display: flex;
     flex-direction: column;
     height: auto;
   }
   .grid-about .grid-about3 p {
+    display: none;
+  }
+  .grid-about .grid-about1 {
+    display: none;
+  }
+  .grid-about .grid-about2 {
     display: none;
   }
   .grid-about .grid-about5 {

@@ -9,8 +9,10 @@
     "about6 about6 about7 about7";
     
     .grid-about1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         background-color: #73B8DC;
-        background-image: url(../../images/sobre-nosotros.png);
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center;
@@ -19,11 +21,21 @@
         
     }
     .grid-about2 {
-        background-image: url(../../images/sobre.nosotros2.png);
+        width: auto;
+        height: auto;
         background-position: center;
         background-color: #909ae2;
         grid-area: about2;
-    }    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            max-width: 100%;
+            height: 100%;
+        }  
+    }
+    
     .grid-about3 {
         background-image: linear-gradient(to bottom left, #73ACDB, #818ac5);        
         grid-area: about3;
