@@ -1,46 +1,147 @@
-
-
-.hero_about {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    padding-bottom: 10vh;
+.grid-about {
+    height: 130vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1.5fr 1.5fr 1fr;
+    grid-template-areas: 
+    "about1 about1 about2 about2"
+    "about3 about4 about4 about5"
+    "about6 about6 about7 about7";
     
-    h2 {
-        font-size: 4rem;
-        text-align: center;
-        font-family: $fontBebasNeue;
-        color: $ternaryColor;
+    .grid-about1 {
+        background-color: #73B8DC;
+        background-image: url(../../images/sobre-nosotros.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        grid-area: about1;
+
+        
     }
-    .item_about {
-        font-family: $fontBebasNeue;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin: 0.5rem;
-        padding: 1rem;
-        color: white;
-        background-image: radial-gradient(circle, black 10%, $bgColor 90%);
+    .grid-about2 {
+        background-image: url(../../images/sobre.nosotros2.png);
+        background-position: center;
+        background-color: #909ae2;
+        grid-area: about2;
+    }    
+    .grid-about3 {
+        background-image: linear-gradient(to bottom left, #73ACDB, #818ac5);        
+        grid-area: about3;
 
         p {
-            font-family: $fontAgdasima;
-            font-size: 22px;
+            margin-top: 30%;
+            margin-left: 40%;
+            transform: rotate(270deg);
+            font-size: 3rem;
+            font-family: $fontBebasNeue;
         }
+    }
+    .grid-about4 {
+        background-color: white;
+        grid-area: about4;
+        border: 10px groove black;
+        font-family: $fontOrbitron;
+        font-size: 1.3rem;
+        padding: 2rem;
 
-        &:hover {
-            cursor: pointer;
-            transform: scale(1.1); 
-            transition: transform 0.3s ease;
+        p{
+            padding-bottom: 1.2rem;
         }
-        
+    }
+    .grid-about5 {
+        background-image: linear-gradient(to top left, #818ac5, #73ACDB);
+        grid-area: about5;
+
         .list-about {
             font-size: 2rem;
             position: relative;
             top: 20%;
             list-style-type: none;
+            font-family: $fontBebasNeue;
+            }
+    }
+    .grid-about6 {
+        background-image: linear-gradient(to right,#818ac5,  #73ACDB);
+        background-color: #818ac5;
+        grid-area: about6;
+        font-family: $fontBebasNeue;
+        padding: 10%;
+
+
+        h3{
+            text-align: center;
+            font-size: 2rem;
+        }
+
+        p{
+            text-align: center;
+            font-size: 1.3rem;
+
         }
     }
+    .grid-about7 {
+        background-image: linear-gradient(to left,#818ac5,  #73ACDB);
 
+        grid-area: about7;
+        font-family: $fontBebasNeue;
+        padding: 10%;
+        font-size: 1.5rem;
+
+
+        p{
+            text-align: center;
+        }
+    }
 }
+
+
+
+
+
+
+
+
+// .hero_about {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 1.5rem;
+//     padding-bottom: 10vh;
+    
+//     h2 {
+//         font-size: 4rem;
+//         text-align: center;
+//         font-family: $fontBebasNeue;
+//         color: $ternaryColor;
+//     }
+//     .item_about {
+//         font-family: $fontBebasNeue;
+//         display: flex;
+//         flex-direction: column;
+//         align-items: center;
+//         text-align: center;
+//         margin: 0.5rem;
+//         padding: 1rem;
+//         color: white;
+//         background-image: radial-gradient(circle, black 10%, $bgColor 90%);
+
+//         p {
+//             font-family: $fontAgdasima;
+//             font-size: 22px;
+//         }
+
+//         &:hover {
+//             cursor: pointer;
+//             transform: scale(1.1); 
+//             transition: transform 0.3s ease;
+//         }
+        
+//         .list-about {
+//             font-size: 2rem;
+//             position: relative;
+//             top: 20%;
+//             list-style-type: none;
+//         }
+//     }
+
+// }
 

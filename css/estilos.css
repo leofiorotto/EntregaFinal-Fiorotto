@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -505,43 +506,84 @@ body, html {
   left: 80%;
 }
 
-.hero_about {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  padding-bottom: 10vh;
+.grid-about {
+  height: 130vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1.5fr 1.5fr 1fr;
+  grid-template-areas: "about1 about1 about2 about2" "about3 about4 about4 about5" "about6 about6 about7 about7";
 }
-.hero_about h2 {
-  font-size: 4rem;
-  text-align: center;
+.grid-about .grid-about1 {
+  background-color: #73B8DC;
+  background-image: url(../../images/sobre-nosotros.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  grid-area: about1;
+}
+.grid-about .grid-about2 {
+  background-image: url(../../images/sobre.nosotros2.png);
+  background-position: center;
+  background-color: #909ae2;
+  grid-area: about2;
+}
+.grid-about .grid-about3 {
+  background-image: linear-gradient(to bottom left, #73ACDB, #818ac5);
+  grid-area: about3;
+}
+.grid-about .grid-about3 p {
+  margin-top: 30%;
+  margin-left: 40%;
+  transform: rotate(270deg);
+  font-size: 3rem;
   font-family: "Bebas Neue", sans-serif;
-  color: #f3f0f0;
 }
-.hero_about .item_about {
-  font-family: "Bebas Neue", sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin: 0.5rem;
-  padding: 1rem;
-  color: white;
-  background-image: radial-gradient(circle, black 10%, #313542 90%);
+.grid-about .grid-about4 {
+  background-color: white;
+  grid-area: about4;
+  border: 10px groove black;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.3rem;
+  padding: 2rem;
 }
-.hero_about .item_about p {
-  font-family: "Agdasima", sans-serif;
-  font-size: 22px;
+.grid-about .grid-about4 p {
+  padding-bottom: 1.2rem;
 }
-.hero_about .item_about:hover {
-  cursor: pointer;
-  transform: scale(1.1);
-  transition: transform 0.3s ease;
+.grid-about .grid-about5 {
+  background-image: linear-gradient(to top left, #818ac5, #73ACDB);
+  grid-area: about5;
 }
-.hero_about .item_about .list-about {
+.grid-about .grid-about5 .list-about {
   font-size: 2rem;
   position: relative;
   top: 20%;
   list-style-type: none;
+  font-family: "Bebas Neue", sans-serif;
+}
+.grid-about .grid-about6 {
+  background-image: linear-gradient(to right, #818ac5, #73ACDB);
+  background-color: #818ac5;
+  grid-area: about6;
+  font-family: "Bebas Neue", sans-serif;
+  padding: 10%;
+}
+.grid-about .grid-about6 h3 {
+  text-align: center;
+  font-size: 2rem;
+}
+.grid-about .grid-about6 p {
+  text-align: center;
+  font-size: 1.3rem;
+}
+.grid-about .grid-about7 {
+  background-image: linear-gradient(to left, #818ac5, #73ACDB);
+  grid-area: about7;
+  font-family: "Bebas Neue", sans-serif;
+  padding: 10%;
+  font-size: 1.5rem;
+}
+.grid-about .grid-about7 p {
+  text-align: center;
 }
 
 .contact {
@@ -666,6 +708,23 @@ footer .copyright {
   .hero-index {
     height: 50vh;
     background-image: url(../images/banner-2.png);
+  }
+}
+@media screen and (max-width: 1400px) {
+  .grid-about {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+  .grid-about .grid-about3 p {
+    display: none;
+  }
+  .grid-about .grid-about5 {
+    padding: 1.5rem;
+  }
+  .grid-about .grid-about5 li {
+    font-size: 2rem;
+    text-align: center;
   }
 }
 @media screen and (max-width: 1300px) {

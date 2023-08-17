@@ -7,6 +7,29 @@
     
 }
 
+@media screen and (max-width:1400px){
+    .grid-about{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+
+        .grid-about3 {
+            p{
+                display: none;        
+            }
+        }
+
+        .grid-about5{
+            padding: 1.5rem;
+            li{
+                font-size: 2rem;
+                text-align: center;
+            }
+        }
+
+    }
+}
+
 @media screen and (max-width:1300px) {
     .hero-index {
         background-image: none;
@@ -54,8 +77,6 @@
             background-size: cover;
         }
     }
-
-    
 }
 
 @media screen and (max-width:1000px) {
