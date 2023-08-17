@@ -1,8 +1,8 @@
 .grid-about {
-    height: 130vh;
+    height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1.5fr 1.5fr 1fr;
+    grid-template-rows: 1fr 1.5fr 1fr;
     grid-template-areas: 
     "about1 about1 about2 about2"
     "about3 about4 about4 about5"
