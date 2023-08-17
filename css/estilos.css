@@ -186,12 +186,14 @@ body, html {
 
 /*-------------------------------------*/
 .circle-section {
-  max-width: 80%;
-  margin: 0 auto;
+  max-width: 90%;
+  margin: auto;
   padding-bottom: 10vh;
   cursor: pointer;
 }
 .circle-section img {
+  max-width: 100%;
+  margin: 0 auto;
   border-radius: 50%;
   padding: 0.8rem;
 }
@@ -507,7 +509,7 @@ body, html {
 }
 
 .grid-about {
-  height: auto;
+  height: 130vh;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1.5fr 1fr;

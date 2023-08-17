@@ -160,12 +160,14 @@
       /*-------------------------------------*/
 
         .circle-section {
-            max-width: 80%;
-            margin: 0 auto;
+            max-width: 90%;
+            margin: auto;
             padding-bottom: 10vh;
             cursor: pointer;
 
                 img {
+                    max-width: 100%;
+                    margin: 0 auto;
                     border-radius: 50%;
                     padding: 0.8rem;
                 }

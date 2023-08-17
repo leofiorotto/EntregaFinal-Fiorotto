@@ -1,5 +1,5 @@
 .grid-about {
-    height: auto;
+    height: 130vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1.5fr 1fr;
@@ -93,7 +93,6 @@
     }
     .grid-about7 {
         background-image: linear-gradient(to left,#818ac5,  #73ACDB);
-
         grid-area: about7;
         font-family: $fontBebasNeue;
         padding: 10%;
